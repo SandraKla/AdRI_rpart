@@ -36,7 +36,7 @@ runApp("app.R")
 
 <img src="www/shiny.png" align="center"/>
 
-The package [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html) (≥ 3.4.4), [rpart](https://cran.r-project.org/web/packages/rpart/index.html) (≥ 4.1.21), [rpart.plot](https://cran.r-project.org/web/packages/rpart.plot/index.html) (≥ 3.1.1), [reflimR](https://cran.r-project.org/web/packages/reflimR/index.html) (≥ 1.0.6) and [shinydashboard](https://cran.r-project.org/web/packages/shinydashboard/index.html) (≥ 0.7.2) is downloaded or imported when starting this app. The used [R](https://www.r-project.org)-Version must be ≥ 4.3.2 (2023-10-31 ucrt).
+The package [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) (≥ 1.1.3), [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html) (≥ 3.4.4), [rpart](https://cran.r-project.org/web/packages/rpart/index.html) (≥ 4.1.21), [rpart.plot](https://cran.r-project.org/web/packages/rpart.plot/index.html) (≥ 3.1.1), [reflimR](https://cran.r-project.org/web/packages/reflimR/index.html) (≥ 1.0.6) and [shinydashboard](https://cran.r-project.org/web/packages/shinydashboard/index.html) (≥ 0.7.2) is downloaded or imported when starting this app. The used [R](https://www.r-project.org)-Version must be ≥ 4.3.2 (2023-10-31 ucrt).
 
 ## Usage
 

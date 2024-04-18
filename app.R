@@ -8,6 +8,11 @@ source("rpart.R")
 
 ####################################### Libraries #################################################
 
+if("dplyr" %in% rownames(installed.packages())){
+  library(dplyr)} else{
+    install.packages("dplyr")
+    library(dplyr)}
+
 if("ggplot2" %in% rownames(installed.packages())){
   library(ggplot2)} else{
     install.packages("ggplot2")
