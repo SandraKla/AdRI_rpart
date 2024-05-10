@@ -36,12 +36,12 @@ iterate_ri_rpart <- function(df, g, subset, ri_color, xlog = FALSE, reflim_n.min
 
         if (xlog) {
           g <- g + geom_rect(alpha = 0, colour = ri_color, xmin = log(x$min_age), xmax = log(x$max_age),
-                             ymin = quantile(quantile_results, 0.025),
-                             ymax = quantile(quantile_results, 0.975))
+                             ymin = as.numeric(quantile(quantile_results, 0.025)),
+                             ymax = as.numeric(quantile(quantile_results, 0.975)))
         } else{
           g <- g + geom_rect(alpha = 0, colour = ri_color, xmin = x$min_age, xmax = x$max_age,
-                             ymin = quantile(quantile_results, 0.025),
-                             ymax = quantile(quantile_results, 0.975))
+                             ymin = as.numeric(quantile(quantile_results, 0.025)),
+                             ymax = as.numeric(quantile(quantile_results, 0.975)))
         }
       })
     }
