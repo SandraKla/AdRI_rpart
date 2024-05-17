@@ -3,9 +3,11 @@
 <img src="www/Logo.svg" width="225px" height="150px" align="right"/>
 
 ![](https://img.shields.io/github/license/SandraKla/AdRI_rpart.svg)
-![](https://img.shields.io/github/last-commit/SandraKla/AdRI_rpart/master.svg)
+![](https://img.shields.io/github/last-commit/SandraKla/AdRI_rpart/main.svg)
 
 This Shiny App computes age groups using the regression tree model based on the R package [rpart](https://cran.r-project.org/web/packages/rpart/index.html), and then calculates reference intervals based on them using [reflimR](https://cran.r-project.org/web/packages/reflimR/index.html).
+
+Decision Trees are used for machine learning. They can be used for classification (_supervised learning_), but also for clustering (_unsupervised learning_). In the Shiny App the Decision Tree is used as a tool to separate the data into age-groups. The proposed age groups from the Decision Tree are used to calculate the reference intervals.
 
 ## Installation 
 
@@ -42,9 +44,11 @@ The package [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) (â
 
 On the left side, you can use the sidebar to choose the lab parameters. In the main panel, you will see the corresponding plot and the outputs.
 
+The data can be downloaded in a suitable form for the Shiny app [Zlog_AdRI](https://github.com/SandraKla/Zlog_AdRI).
+
 ### Preloaded dataset
 
-The biomarker data from the [CALIPER study](https://doi.org/10.1373/clinchem.2011.177741) is available in this Shiny App in the [CALIPER folder](https://github.com/SandraKla/AdRI_rpart/tree/master/data). The data was brought into the appropriate format for the analysis.
+The biomarker data from the [CALIPER study](https://doi.org/10.1373/clinchem.2011.177741) is available in this Shiny App in the [CALIPER folder](https://github.com/SandraKla/AdRI_rpart/tree/main/data). The data was brought into the appropriate format for the analysis.
 
 * Albumin G (g/L)
 * Albumin P (g/L)
@@ -86,6 +90,17 @@ The biomarker data from the [CALIPER study](https://doi.org/10.1373/clinchem.201
 * UHDL (Ultra HDL) (mmol/L)
 * Urea (mmol/L)
 * Uric Acid (Âµmol/L)
+
+New data is loaded with `read.csv2()` and the tables are written with `write.csv2()`. The CSV file has a semicolon as separator. The data must contain the following information: **SEX** ("F" = female, "M" = male), **AGE_DAYS** (age in days), **AGE_YEARS** (age in years), **VALUE** (value of the analyte) and **ANALYTE** (name of the analyte):
+
+```bash
+SEX;AGE_DAYS;AGE_YEARS;VALUE;ANALYTE
+M;2;0;1;EXAMPLE
+F;2;0;2;EXAMPLE
+F;3;0;;EXAMPLE
+F;3;0;1;EXAMPLE
+M;3;0;2;EXAMPLE
+```
 
 ## Contact
 
