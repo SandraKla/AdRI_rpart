@@ -109,4 +109,4 @@ You are welcome to:
 - Make a pull request on: https://github.com/SandraKla/AdRI_rpart/pulls
 - Write an Email with any questions and problems to: s.klawitter@ostfalia.de
 
-Link to the publication: [Automated sex and age partitioning for the estimation of reference intervals using a regression tree model]()
+Link to the publication: [Automated sex and age partitioning for the estimation of reference intervals using a regression tree model](https://doi.org/10.1515/labmed-2024-0083)
