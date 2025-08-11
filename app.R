@@ -99,7 +99,7 @@ ui <- dashboardPage(
                 "or",
                 br(),
                 "read the publication",
-                a("doi: ", href = ""),
+                a("Klawitter et al. (2023)", href = "https://doi.org/10.1515/labmed-2024-0083"),
                 "!"
             )
         )
